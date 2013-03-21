@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="nanjakkun">
+<title>Scala勉強会　第100回　発表資料</title>
+<link rel="stylesheet" href="./css/reveal.css">
+<link rel="stylesheet" href="./css/moon.css">
+<link rel="stylesheet" href="./css/zenburn.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <h2>SATソルバーで<br />Nクイーンを解く</h2>
+      <p>@nanjakkun</p>
+    </section>
+
+    <section>
+      <h2>おまえは、誰だ</h2>
+      <p>Twitter: @nanjakkun</p>
+      <p>Hatena: id:nanjakkun</p>
+    </section>
+
+    <section>
+      <h2>Nクイーン</h2>
+      <p><img src="./image/images.jpeg" style="width: 400px;"/></p>
+      <p>N × Nのチェスの盤面にN個のクイーンを</p>
+      <p>互いに攻撃できない位置に置く問題</p>
+      <p>※コップ本にも解法が載っています</p>
+    </section>
+
+    <section>
+      <h2>SATソルバとは</h2>
+      <p>一つの命題論理式が与えられたときに、</p>
+      <p>それ全体が真になる変数の割り当てを探索するプログラム</p>
+      <p style="background-color: white;">
+        <img src="./image/equation.png" style="width: 400px;" />
+      </p>
+      <p>See: http://ja.wikipedia.org/wiki/充足可能性問題</p>
+    </section>
+
+    <section>
+      <h2>今回やったこと</h2>
+      <p>SATソルバを使ってNクイーンを解いた</p>
+      <p>※SATソルバそのものを作ったわけではない</p>
+      <p>　</p>
+      <p>1. SATソルバが理解できる形に問題を符号化（？）</p>
+      <p>2. SATソルバに渡して解かせる</p>
+      <p>3. 返ってきた値を見てわかる形にする</p>
+
+    </section>
+
+    <section>
+      <h1>デモ？</h1>
+      <p></p>
+    </section>
+
+    <section>
+      <h2>やりかけのこと</h2>
+      <p>・別のパズル（数独とか）を解く</p>
+      <p>・SATソルバ本体をScalaで書く</p>
+    </section>
+
+    <section>
+      <h1>ありがとう<br />ございました</h1>
+    </section>
+
+  </div>
+
+  <div style="position: absolute; right: 0; z-index: 100; transform: rotate(45deg); top: 45px;">
+    <span style="color: #FFFFC0; font-weight: 600; font-size: 28px;">祝100回★</span>
+  </div>
+</div>
+
+<script src="./js/head.min.js"></script>
+<script src="./js/reveal.min.js"></script>
+<script>
+Reveal.initialize({});
+</script>
+</body>
+</html>
